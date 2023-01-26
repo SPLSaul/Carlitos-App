@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Carlitos_App.Combos.Pago"
+             BackgroundColor="Black"
+             
+             
+              Title="Pago">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="610"/>
+                    <RowDefinition Height="70"/>
+                </Grid.RowDefinitions>
+
+                <CollectionView x:Name="colleciontView" Grid.Row="0">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <SwipeView>
+                                <SwipeView.RightItems>
+                                    <SwipeItems SwipeBehaviorOnInvoked="Close">
+                                        <SwipeItem Text="Eliminar" BackgroundColor="OrangeRed" Invoked="btnEliminarLista" CommandParameter="{Binding ID}"/>
+                                    </SwipeItems>
+                                </SwipeView.RightItems>
+                                <Grid BackgroundColor="Black">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="300"/>
+                                        <ColumnDefinition Width="100"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Text="{Binding Name}" FontSize="30" Grid.Column="0" TextColor="FloralWhite" FontAttributes="Italic" />
+                                    <Label Text="{Binding Precio}" FontSize="Large" TextColor="LightSalmon" Grid.Column="1"/>
+
+                                </Grid>
+                            </SwipeView>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                <Button Text="Limpiar Orden" TextColor="Black" BackgroundColor="OrangeRed" Clicked="btnLimpiar" Grid.Row="1" FontSize="35" FontAttributes="Bold"/>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

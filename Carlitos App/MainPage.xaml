@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Shell.NavBarIsVisible="False"
+             Shell.TabBarIsVisible="False"
+             BackgroundColor="White"
+             x:Class="Carlitos_App.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <Image Source="carlos_jr.png" SemanticProperties.Description ="Carlos Jr Logo"
+               HeightRequest="200"
+               />
+
+            <Label Text="Sabores de alla, precios de aca" SemanticProperties.HeadingLevel="Level1" VerticalOptions="Start"
+               FontSize="15"  HorizontalOptions="Center" TextColor="Black"/>
+            <Entry Placeholder="Usuario" x:Name="Usuario" Keyboard="Text" BackgroundColor="LightGrey" TextColor="Black" PlaceholderColor="Black" />
+            <Entry Placeholder="Contraseña" x:Name="Contraseña" Keyboard="Text" BackgroundColor="LightGrey" TextColor="Black" PlaceholderColor="Black"
+                  IsPassword="True" />
+            <Button Text="Ingresar" Clicked="btnIngresar_Clicked" x:Name="Ingresar"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

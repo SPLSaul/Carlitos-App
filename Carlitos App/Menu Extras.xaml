@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Carlitos_App.Menu_Extras"
+             Shell.NavBarIsVisible="False"
+             Shell.TabBarIsVisible="True"
+             Title="Volver a menu">
+    <ScrollView Margin="0,10,0,0">
+        <VerticalStackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+
+                <ImageButton Source="aros.jpg" Grid.Row="0" />
+                <Button Text="Aros de cebolla" BackgroundColor="Transparent" TextColor="Black" FontAttributes="Bold" FontSize="30" Grid.Row="0" />
+                <ImageButton Source="caesar.jpg" Grid.Row="1"  />
+                <Button Text="Ensalada Caesar" BackgroundColor="Transparent" TextColor="Black" FontSize="30" Grid.Row="1" FontAttributes="Bold"  />
+                <ImageButton Source="fries.jpg" Grid.Row="2" />
+                <Button Text="Papas n' Cheese" BackgroundColor="Transparent" TextColor="Black" FontAttributes="Bold" FontSize="30" Grid.Row="2" />
+                <ImageButton Source="nuggets.jpg" Grid.Row="3"  />
+                <Button Text="Star Nuggets" BackgroundColor="Transparent" TextColor="Black" FontSize="30" Grid.Row="3" FontAttributes="Bold" />
+                <ImageButton Source="pastel.jpg" Grid.Row="4" />
+                <Button Text="Pastel de Chocolate" BackgroundColor="Transparent" TextColor="Black" FontAttributes="Bold" FontSize="30" Grid.Row="4" />
+                <ImageButton Source="wings.jpg" Grid.Row="5"  />
+                <Button Text="Chicken Wings" BackgroundColor="Transparent" TextColor="Black" FontSize="30" Grid.Row="5" FontAttributes="Bold" />
+                <ImageButton Source="aros.jpg" Grid.Row="6" />
+                <Button Text="Aros de cebolla" BackgroundColor="Transparent" TextColor="Black" FontAttributes="Bold" FontSize="30" Grid.Row="6" />
+                <ImageButton Source="caesar.jpg" Grid.Row="7"  />
+                <Button Text="Ensalada Caesar" BackgroundColor="Transparent" TextColor="Black" FontSize="30" Grid.Row="7" FontAttributes="Bold" />
+                <Button  Text="Pagar" FontSize="Large" VerticalOptions="Center" BackgroundColor="Orange" Grid.Row="8"/>
+
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

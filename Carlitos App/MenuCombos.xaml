@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Carlitos_App.MenuCombos"
+              Shell.NavBarIsVisible="False"
+             BackgroundColor="Red"
+             Shell.TabBarIsVisible="True"
+             Title="MenuCombos">
+
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+
+                <ImageButton Source="amigos.jpg" Grid.Row="0" />
+                <Button Text="Combo Amigos Pollo" BackgroundColor="Transparent" TextColor="Black" FontAttributes="Bold" FontSize="30" Grid.Row="0" Clicked="btnAmigosPollo"/>
+                <ImageButton Source="estudihambre.jpg" Grid.Row="1"  />
+                <Button Text="Combo Estudiante" BackgroundColor="Transparent" TextColor="Black" FontSize="30" Grid.Row="1" FontAttributes="Bold" Clicked="btnCEstudiante" VerticalOptions="Fill"/>
+                <ImageButton Source="mania.jpg" Grid.Row="2" />
+                <Button Text="Combo Carlos Mania" BackgroundColor="Transparent" TextColor="Black" FontAttributes="Bold" FontSize="30" Grid.Row="2" Clicked="btnAmigosPollo"/>
+                <ImageButton Source="fantas.jpg" Grid.Row="3"  />
+                <Button Text="Fantasy Combo" BackgroundColor="Transparent" TextColor="Black" FontSize="30" Grid.Row="3" FontAttributes="Bold" Clicked="btnCEstudiante" VerticalOptions="Fill"/>
+                <ImageButton Source="infantil.jpg" Grid.Row="4" />
+                <Button Text="Combo Infantil" BackgroundColor="Transparent" TextColor="Black" FontAttributes="Bold" FontSize="30" Grid.Row="4" Clicked="btnAmigosPollo"/>
+                <ImageButton Source="estudihambre.jpg" Grid.Row="5"  />
+                <Button Text="Combo Estudiante" BackgroundColor="Transparent" TextColor="Black" FontSize="30" Grid.Row="5" FontAttributes="Bold" Clicked="btnCEstudiante" VerticalOptions="Fill"/>
+                <ImageButton Source="mania.jpg" Grid.Row="6" />
+                <Button Text="Combo Amigos Pollo" BackgroundColor="Transparent" TextColor="Black" FontAttributes="Bold" FontSize="30" Grid.Row="6" Clicked="btnAmigosPollo"/>
+                <ImageButton Source="fantas.jpg" Grid.Row="7"  />
+                <Button Text="Combo Estudiante" BackgroundColor="Transparent" TextColor="Black" FontSize="30" Grid.Row="7" FontAttributes="Bold" Clicked="btnCEstudiante" VerticalOptions="Fill"/>
+                <Button  Text="Pagar" FontSize="Large" Clicked="btnPagar" VerticalOptions="Center" BackgroundColor="Orange" Grid.Row="8"/>
+
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

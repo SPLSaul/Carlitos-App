@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Carlitos_App.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Carlitos_App"
+    Shell.FlyoutBehavior="Disabled">
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+
+        <ShellContent  ContentTemplate="{DataTemplate local:MainPage}"  />
+        <ShellContent      Title="Combos" 
+        ContentTemplate="{DataTemplate local:MenuCombos}" Route="MenuCombos"/>
+        <ShellContent Title="Complementos"  
+         ContentTemplate="{DataTemplate local:Menu_Extras}" Route="NewContent1"/>
+    </FlyoutItem>
+
+</Shell>
