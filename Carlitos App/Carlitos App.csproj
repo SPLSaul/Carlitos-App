@@ -49,6 +49,23 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\amigos.jpeg" />
+	  <None Remove="Resources\Images\aros.jpg" />
+	  <None Remove="Resources\Images\caesar.jpg" />
+	  <None Remove="Resources\Images\carlos_jr.png" />
+	  <None Remove="Resources\Images\combo_icon.jpg" />
+	  <None Remove="Resources\Images\estudihambre.jpeg" />
+	  <None Remove="Resources\Images\fantas.jpeg" />
+	  <None Remove="Resources\Images\fries.png" />
+	  <None Remove="Resources\Images\hamburgesa_icon.png" />
+	  <None Remove="Resources\Images\infantil.jpg" />
+	  <None Remove="Resources\Images\mania.jpg" />
+	  <None Remove="Resources\Images\nuggets.jpg" />
+	  <None Remove="Resources\Images\pastel.jpg" />
+	  <None Remove="Resources\Images\wings.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
 	  <PackageReference Include="SQLitePCLRaw.provider.dynamic_cdecl" Version="2.1.4" />
 	</ItemGroup>

@@ -31,11 +31,11 @@
                 <ImageButton Source="estudihambre.jpg" Grid.Row="1"  />
                 <Button Text="Combo Estudiante" BackgroundColor="Transparent" TextColor="Black" FontSize="30" Grid.Row="1" FontAttributes="Bold" Clicked="btnCEstudiante" VerticalOptions="Fill"/>
                 <ImageButton Source="mania.jpg" Grid.Row="2" />
-                <Button Text="Combo Carlos Mania" BackgroundColor="Transparent" TextColor="Black" FontAttributes="Bold" FontSize="30" Grid.Row="2" Clicked="btnAmigosPollo"/>
+                <Button Text="Combo Carlos Mania" BackgroundColor="Transparent" TextColor="Black" FontAttributes="Bold" FontSize="30" Grid.Row="2" Clicked="btnCMania"/>
                 <ImageButton Source="fantas.jpg" Grid.Row="3"  />
-                <Button Text="Fantasy Combo" BackgroundColor="Transparent" TextColor="Black" FontSize="30" Grid.Row="3" FontAttributes="Bold" Clicked="btnCEstudiante" VerticalOptions="Fill"/>
+                <Button Text="Fantasy Combo" BackgroundColor="Transparent" TextColor="Black" FontSize="30" Grid.Row="3" FontAttributes="Bold" Clicked="btnCFantasi" VerticalOptions="Fill"/>
                 <ImageButton Source="infantil.jpg" Grid.Row="4" />
-                <Button Text="Combo Infantil" BackgroundColor="Transparent" TextColor="Black" FontAttributes="Bold" FontSize="30" Grid.Row="4" Clicked="btnAmigosPollo"/>
+                <Button Text="Combo Infantil" BackgroundColor="Transparent" TextColor="Black" FontAttributes="Bold" FontSize="30" Grid.Row="4" Clicked="btnCInfantil"/>
                 <ImageButton Source="estudihambre.jpg" Grid.Row="5"  />
                 <Button Text="Combo Estudiante" BackgroundColor="Transparent" TextColor="Black" FontSize="30" Grid.Row="5" FontAttributes="Bold" Clicked="btnCEstudiante" VerticalOptions="Fill"/>
                 <ImageButton Source="mania.jpg" Grid.Row="6" />

@@ -27,7 +27,7 @@
                 <Button Text="Aros de cebolla" BackgroundColor="Transparent" TextColor="Black" FontAttributes="Bold" FontSize="30" Grid.Row="0" />
                 <ImageButton Source="caesar.jpg" Grid.Row="1"  />
                 <Button Text="Ensalada Caesar" BackgroundColor="Transparent" TextColor="Black" FontSize="30" Grid.Row="1" FontAttributes="Bold"  />
-                <ImageButton Source="fries.jpg" Grid.Row="2" />
+                <ImageButton Source="fries.png" Grid.Row="2" />
                 <Button Text="Papas n' Cheese" BackgroundColor="Transparent" TextColor="Black" FontAttributes="Bold" FontSize="30" Grid.Row="2" />
                 <ImageButton Source="nuggets.jpg" Grid.Row="3"  />
                 <Button Text="Star Nuggets" BackgroundColor="Transparent" TextColor="Black" FontSize="30" Grid.Row="3" FontAttributes="Bold" />

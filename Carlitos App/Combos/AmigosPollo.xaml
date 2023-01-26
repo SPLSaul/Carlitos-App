@@ -24,7 +24,7 @@
             Text="Combo Amigos Pollo"
             VerticalOptions="Center" 
             HorizontalOptions="Center" FontSize="35" TextColor="LightSalmon" FontAttributes="Bold" />
-            <Image Grid.Row="1" Source="pollo.jpg" HeightRequest="150" Grid.ColumnSpan="2"/>
+            <Image Grid.Row="1" Source="amigos.jpg" HeightRequest="150" Grid.ColumnSpan="2"/>
             <Frame BorderColor="Red" Grid.Row="2" Grid.ColumnSpan="2">
                 <Label   
             Text="Contiene dos deliciosas hamburguesas grande de pollo, unas ricas papas fritas y dos bebidas de 15oz de nuestras increibles bebidas."
