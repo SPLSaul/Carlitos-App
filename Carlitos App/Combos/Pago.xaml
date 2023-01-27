@@ -7,31 +7,35 @@
              
               Title="Pago">
     <ScrollView>
-        <VerticalStackLayout>
+        <VerticalStackLayout Padding="10">
             <Grid >
                 <Grid.RowDefinitions>
                     <RowDefinition Height="610"/>
                     <RowDefinition Height="70"/>
                 </Grid.RowDefinitions>
-
-                <CollectionView x:Name="colleciontView" Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="290"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+                <CollectionView x:Name="colleciontView" Grid.Row="0" Grid.ColumnSpan="2">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <SwipeView>
                                 <SwipeView.RightItems>
                                     <SwipeItems SwipeBehaviorOnInvoked="Close">
-                                        <SwipeItem Text="Eliminar" BackgroundColor="OrangeRed" Invoked="btnEliminarLista" CommandParameter="{Binding ID}"/>
+                                        <SwipeItem Text="Eliminar"  BackgroundColor="OrangeRed" Invoked="btnEliminarLista" CommandParameter="{Binding ID}"/>
                                     </SwipeItems>
                                 </SwipeView.RightItems>
-                                <Grid BackgroundColor="Black">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="300"/>
-                                        <ColumnDefinition Width="100"/>
+                                <Frame Padding="5" CornerRadius="5" IsClippedToBounds="False" Margin="5">
+                                    <Grid BackgroundColor="Black" HeightRequest="100">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="280"/>
+                                            <ColumnDefinition Width="100"/>
                                     </Grid.ColumnDefinitions>
-                                    <Label Text="{Binding Name}" FontSize="30" Grid.Column="0" TextColor="FloralWhite" FontAttributes="Italic" />
-                                    <Label Text="{Binding Precio}" FontSize="Large" TextColor="LightSalmon" Grid.Column="1"/>
-
-                                </Grid>
+                                        <Label Text="{Binding Name}" FontSize="30" Grid.Column="0" TextColor="Black" FontAttributes="Bold" BackgroundColor="LightGrey"/>
+                                        <Label Text="{Binding Precio,StringFormat='{0:C}'}" FontSize="Large" TextColor="Black" Grid.Column="1" BackgroundColor="LightGrey" FontAttributes="Bold"/>
+                                    </Grid>
+                                </Frame>
                             </SwipeView>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>

@@ -3,14 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Carlitos_App.MenuCombos"
               Shell.NavBarIsVisible="False"
-             BackgroundColor="Red"
+             BackgroundColor="White"
              Shell.TabBarIsVisible="True"
              Title="MenuCombos">
 
 
     <ScrollView>
         <VerticalStackLayout>
-            <Grid>
+            <Frame Padding="5" CornerRadius="5" IsClippedToBounds="False" Margin="5">
+                <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
@@ -26,7 +27,7 @@
                     <RowDefinition Height="100"/>
                 </Grid.RowDefinitions>
 
-                <ImageButton Source="amigos.jpg" Grid.Row="0" />
+                <ImageButton Source="amigosr.jpg" Grid.Row="0"  />
                 <Button Text="Combo Amigos Pollo" BackgroundColor="Transparent" TextColor="Black" FontAttributes="Bold" FontSize="30" Grid.Row="0" Clicked="btnAmigosPollo"/>
                 <ImageButton Source="estudihambre.jpg" Grid.Row="1"  />
                 <Button Text="Combo Estudiante" BackgroundColor="Transparent" TextColor="Black" FontSize="30" Grid.Row="1" FontAttributes="Bold" Clicked="btnCEstudiante" VerticalOptions="Fill"/>
@@ -45,6 +46,7 @@
                 <Button  Text="Pagar" FontSize="Large" Clicked="btnPagar" VerticalOptions="Center" BackgroundColor="Orange" Grid.Row="8"/>
 
             </Grid>
+            </Frame>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

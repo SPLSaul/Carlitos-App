@@ -12,34 +12,28 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="150"/>
-                    <RowDefinition Height="150"/>
-                    <RowDefinition Height="150"/>
-                    <RowDefinition Height="150"/>
-                    <RowDefinition Height="150"/>
-                    <RowDefinition Height="150"/>
-                    <RowDefinition Height="150"/>
-                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="200"/>
                     <RowDefinition Height="100"/>
                 </Grid.RowDefinitions>
 
                 <ImageButton Source="aros.jpg" Grid.Row="0" />
-                <Button Text="Aros de cebolla" BackgroundColor="Transparent" TextColor="Black" FontAttributes="Bold" FontSize="30" Grid.Row="0" />
+                <Button Text="Aros de cebolla" BackgroundColor="Transparent" TextColor="Black" FontAttributes="Bold" FontSize="30" Grid.Row="0" x:Name="Aros" Clicked="btnCebolla" />
                 <ImageButton Source="caesar.jpg" Grid.Row="1"  />
-                <Button Text="Ensalada Caesar" BackgroundColor="Transparent" TextColor="Black" FontSize="30" Grid.Row="1" FontAttributes="Bold"  />
+                <Button Text="Ensalada Caesar" BackgroundColor="Transparent" TextColor="Black" FontSize="30" Grid.Row="1" FontAttributes="Bold" x:Name="Ensalada" Clicked="btnCaesar"/>
                 <ImageButton Source="fries.png" Grid.Row="2" />
-                <Button Text="Papas n' Cheese" BackgroundColor="Transparent" TextColor="Black" FontAttributes="Bold" FontSize="30" Grid.Row="2" />
+                <Button Text="Papas n' Cheese" BackgroundColor="Transparent" TextColor="Black" FontAttributes="Bold" FontSize="30" Grid.Row="2" x:Name="Fries" Clicked="btnFries"/>
                 <ImageButton Source="nuggets.jpg" Grid.Row="3"  />
-                <Button Text="Star Nuggets" BackgroundColor="Transparent" TextColor="Black" FontSize="30" Grid.Row="3" FontAttributes="Bold" />
+                <Button Text="Star Nuggets" BackgroundColor="Transparent" TextColor="Black" FontSize="30" Grid.Row="3" FontAttributes="Bold" x:Name="Nuggets" Clicked="btnNuggets"/>
                 <ImageButton Source="pastel.jpg" Grid.Row="4" />
-                <Button Text="Pastel de Chocolate" BackgroundColor="Transparent" TextColor="Black" FontAttributes="Bold" FontSize="30" Grid.Row="4" />
+                <Button Text="Pastel de Chocolate" BackgroundColor="Transparent" TextColor="Black" FontAttributes="Bold" FontSize="30" Grid.Row="4" x:Name="Pastel" Clicked="btnPastel"/>
                 <ImageButton Source="wings.jpg" Grid.Row="5"  />
-                <Button Text="Chicken Wings" BackgroundColor="Transparent" TextColor="Black" FontSize="30" Grid.Row="5" FontAttributes="Bold" />
-                <ImageButton Source="aros.jpg" Grid.Row="6" />
-                <Button Text="Aros de cebolla" BackgroundColor="Transparent" TextColor="Black" FontAttributes="Bold" FontSize="30" Grid.Row="6" />
-                <ImageButton Source="caesar.jpg" Grid.Row="7"  />
-                <Button Text="Ensalada Caesar" BackgroundColor="Transparent" TextColor="Black" FontSize="30" Grid.Row="7" FontAttributes="Bold" />
-                <Button  Text="Pagar" FontSize="Large" VerticalOptions="Center" BackgroundColor="Orange" Grid.Row="8"/>
+                <Button Text="Chicken Wings" BackgroundColor="Transparent" TextColor="Black" FontSize="30" Grid.Row="5" FontAttributes="Bold" x:Name="Wings" Clicked="btnWings"/>
+                <Button  Text="Pagar" FontSize="Large" VerticalOptions="Center" BackgroundColor="Orange" Grid.Row="6" Clicked="btnPagar"/>
 
             </Grid>
         </VerticalStackLayout>

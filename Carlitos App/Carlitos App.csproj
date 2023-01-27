@@ -50,6 +50,7 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\amigos.jpeg" />
+	  <None Remove="Resources\Images\amigosr.jpeg" />
 	  <None Remove="Resources\Images\aros.jpg" />
 	  <None Remove="Resources\Images\caesar.jpg" />
 	  <None Remove="Resources\Images\carlos_jr.png" />
